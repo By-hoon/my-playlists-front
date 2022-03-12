@@ -1,11 +1,13 @@
 // Config
 @import "./config/_reset.scss";
 @import "./config/_font.scss";
+@import "./config/color";
 
 // Routes
 @import "./routes/login.scss";
 
 // Components
+@import "./components/header.scss";
 
 // GlobalStyles
 
@@ -30,6 +32,7 @@ p {
   left: 0;
   top: 0;
   width: 100%;
+  min-width: 1200px;
   height: 100vh;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/byhoon-bdf04.appspot.com/o/mypl%20bg.jpg?alt=media&token=2c963035-971c-4b59-b15f-be1f62fe0aa7);
   background-size: cover;
