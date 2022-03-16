@@ -2,6 +2,10 @@ export interface PlayBoxProps {
   children: React.ReactNode;
 }
 
+export interface PlaylistCategoryProps {
+  pathname: string;
+}
+
 export interface PlaylistResponseProps {
   author: string;
   bookmark: boolean;
