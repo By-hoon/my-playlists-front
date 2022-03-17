@@ -1,5 +1,4 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
 import Home from "./routes/Home";
 import Login from "./routes/Login";
 
@@ -10,7 +9,6 @@ const Router = () => {
     <BrowserRouter>
       {isLoggedIn ? (
         <>
-          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="*" element={<Navigate replace to="/" />} />
