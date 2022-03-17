@@ -1,1 +1,5 @@
 $main-background-color: #17202a;
+
+@mixin mixin-background-color($color, $opacity) {
+  background-color: rgba($color: $color, $alpha: $opacity);
+}
