@@ -6,6 +6,10 @@ export interface PlaylistCategoryProps {
   pathname: string;
 }
 
+export interface EditBoxProps {
+  pathname: string;
+}
+
 export interface PlaylistResponseProps {
   author: string;
   bookmark: boolean;
