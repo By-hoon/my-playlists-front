@@ -5,15 +5,19 @@
 
 // Routes
 @import "./routes/login.scss";
+@import "./routes/home.scss";
 
 // Components
 @import "./components/header.scss";
+@import "./components/playBox.scss";
+@import "./components/playlist.scss";
+@import "./components/playlistCategory.scss";
+@import "./components/editBox.scss";
 
 // GlobalStyles
-
 body {
   width: 1200px;
-  margin: 180px auto 0 auto;
+  margin: 50px auto 0 auto;
   background-color: #2a373a;
 }
 
@@ -22,7 +26,8 @@ div {
 }
 
 span,
-p {
+p,
+a {
   font-family: "KoPub Dotum";
 }
 
