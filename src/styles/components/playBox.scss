@@ -3,8 +3,8 @@
   // border: solid tomato 1px;
   width: 100%;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 100px 550px 50px;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 565px 35px;
   grid-template-areas:
     "header-left   header-right"
     "content-left  content-right"
@@ -18,8 +18,8 @@
 
 .play-box__container .play-box__container--top {
   grid-area: header-right;
-  @include mixin-background-color($main-background-color, 0.1);
-  border-bottom: 2px solid rgba($color: #fff, $alpha: 0.5);
+  @include mixin-background-color($main-background-color, 0.7);
+  border-bottom: 2px solid rgba($color: #fff, $alpha: 0.9);
 }
 
 .play-box__container .play-box__container--left {

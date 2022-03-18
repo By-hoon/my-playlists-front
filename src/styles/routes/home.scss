@@ -2,10 +2,8 @@
   width: 100%;
   height: auto;
   max-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 45px 55px 45px 45px;
-  overflow: auto;
+  padding-top: 35px;
+  overflow: hidden;
 }
 
 .my-playlists__container::-webkit-scrollbar {
