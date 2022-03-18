@@ -1,13 +1,26 @@
+import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <div className="header__container">
-        <Link to="/" className="logo__container">
-          내플리스
+        <div className="logo__container">
+          <Link to="/">내플리스</Link>
+        </div>
+        <Link to="/playlist/add" className="add__button--header">
+          <Icon icon="ic:baseline-playlist-add" />
         </Link>
-        {/* search box */}
+        <div className="search__container">
+          <form method="get" action="/search">
+            <input
+              type="text"
+              placeholder="플레이리스트 검색"
+              name="keyword"
+              className="search__input--header"
+            />
+          </form>
+        </div>
       </div>
     </>
   );
