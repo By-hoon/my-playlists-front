@@ -8,9 +8,15 @@ const Header = () => {
         <div className="logo__container">
           <Link to="/">내플리스</Link>
         </div>
-        <Link to="/playlist/add" className="add__button--header">
-          <Icon icon="ic:baseline-playlist-add" />
-        </Link>
+        <div className="button__container--header">
+          <Link to="/playlist/add" className="add__button--header">
+            <Icon icon="ic:baseline-playlist-add" />
+          </Link>
+          <Link to="dd" className="back__button--header">
+            <Icon icon="akar-icons:arrow-back" />
+          </Link>
+        </div>
+
         <div className="search__container">
           <form method="get" action="/search">
             <input

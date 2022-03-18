@@ -21,10 +21,6 @@ export interface PlaylistResponseProps {
   visibility: boolean;
 }
 
-export interface PlaylistProp {
-  playlistProps: PlaylistResponseProps;
-}
-
 export interface SongProps {
   createdDate: string;
   description: string;

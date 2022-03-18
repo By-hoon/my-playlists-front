@@ -1,32 +1,33 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import { PlaylistProp } from "../shared/Props";
 
-const Playlist = (playlistObj: PlaylistProp) => {
+interface PlaylistProps {
+  playlist: Record<string, any>;
+}
+
+const Playlist = ({ playlist }: PlaylistProps) => {
   return (
     <Link
       to={`/playlist`}
       state={{
         path: "/playlistDetail",
-        pid: `${playlistObj.playlistProps.playlistId}`,
+        pid: `${playlist.playlistId}`,
       }}
       className="playlist__link"
     >
       <div className="playlist__container">
         <div className="playlist__container--left">
-          <span className="playlist__span--title">
-            {playlistObj.playlistProps.title}
-          </span>
-          <span className="playlist__span--author">
-            {playlistObj.playlistProps.author}
-          </span>
-          <span className="playlist__span--updatedDate">
-            {playlistObj.playlistProps.updatedDate}
-          </span>
+          <span className="playlist__span--title">{playlist.title}</span>
+          <div>
+            <span className="playlist__span--updatedDate">
+              {playlist.updatedDate}
+            </span>
+            <span className="playlist__span--author">{playlist.author}</span>
+          </div>
         </div>
         <div className="playlist__container--right">
           <span className="playlist__span--amount">
-            {playlistObj.playlistProps.songs.length}
+            {playlist.songs.length}
           </span>
           <div className="playlist-icon__container">
             <Icon icon="bxs:playlist" />

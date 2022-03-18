@@ -5,9 +5,6 @@ import { EditBoxProps } from "../shared/Props";
 const EditBox = ({ pathname }: EditBoxProps) => {
   return (
     <div className="edit-box__container">
-      <Link to="/playlist/add">
-        <Icon icon="ic:baseline-playlist-add" />
-      </Link>
       {/* Link, pid, sid 받아오기. */}
       {pathname === "/playlistDetail" ? (
         <>

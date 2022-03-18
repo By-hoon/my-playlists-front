@@ -9,7 +9,7 @@ const PlaylistCategory = ({ pathname }: PlaylistCategoryProps) => {
         to="/"
         className={classNames("category__link", { isBright: pathname === "/" })}
       >
-        내 플리
+        내 플레이리스트
       </Link>
       <Link
         to="/all"
@@ -17,7 +17,7 @@ const PlaylistCategory = ({ pathname }: PlaylistCategoryProps) => {
           isBright: pathname === "/all",
         })}
       >
-        모든 플리
+        모든 플레이리스트
       </Link>
       <Link
         to="/bookmarks"
