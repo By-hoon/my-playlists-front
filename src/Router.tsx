@@ -1,25 +1,18 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Home from "./routes/Home";
-import Login from "./routes/Login";
-
-import { isLoggedIn } from "./test/user";
+import Home from "./routes/home";
+import Login from "./routes/login";
+import Playlist from "./routes/playlist"
 
 const Router = () => {
   return (
     <BrowserRouter>
-      {isLoggedIn ? (
-        <>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<Navigate replace to="/" />} />
-          </Routes>
-        </>
-      ) : (
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<Navigate replace to="/login" />} />
-        </Routes>
-      )}
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/playlist" element={<Playlist />} />
+        <Route path="*" element={<Navigate replace to="/" />} />
+      </Routes>
+
     </BrowserRouter>
   );
 };

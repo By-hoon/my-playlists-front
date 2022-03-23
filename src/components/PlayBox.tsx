@@ -1,15 +1,23 @@
 import React from "react";
 import { PlayBoxProps } from "../shared/Props";
-import { userObj } from "../test/user";
+import { songs, user } from "../test/user";
 import Header from "./Header";
 import ProfileMenu from "./ProfileMenu";
+import EditBox from "./EditBox";
 
-const PlayBox: React.FC<PlayBoxProps> = ({ children }) => {
+const PlayBox = ({ page, top, left, right }: PlayBoxProps) => {
   return (
     <div className="play-box__container">
       <Header />
-      {children}
-      <ProfileMenu name={userObj.nikname} />
+      <div className="play-box__container--top">
+        <span className="page-title__span">{top}</span>
+        <EditBox page={page} />
+      </div>
+      <div className="play-box__container--left">
+        <div className="lists__container">{left}</div>
+      </div>
+      <div className="play-box__container--right">{right}</div>
+      <ProfileMenu name={user.nickname} />
     </div>
   );
 };

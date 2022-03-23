@@ -1,29 +1,24 @@
+import { ReactNode } from "react";
+
 export interface PlayBoxProps {
-  children: React.ReactNode;
+  page: string;
+  top: ReactNode;
+  left: ReactNode;
+  right: ReactNode;
 }
 
 export interface PlaylistCategoryProps {
-  pathname: string;
+  page: string;
 }
 
 export interface EditBoxProps {
-  pathname: string;
+  page: string;
 }
 
-export interface PlaylistResponseProps {
-  author: string;
-  bookmark: boolean;
-  description: string;
-  playlistId: number;
-  songs: Array<SongProps>;
-  title: string;
-  updatedDate: string;
-  visibility: boolean;
+export interface PlaylistProps {
+  playlist: Record<string, any>;
 }
 
 export interface SongProps {
-  createdDate: string;
-  description: string;
-  title: string;
-  videoId: string;
+  song: Record<string, any>;
 }
