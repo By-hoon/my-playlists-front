@@ -4,7 +4,9 @@
 
 <br>
 
-## [메인 레포 (dolgodolah/my-playlists)](https://github.com/dolgodolah/my-playlists)
+- [메인 레포 (dolgodolah/my-playlists)](https://github.com/dolgodolah/my-playlists)
+
+- [내플리스 Notion](https://mirror-oatmeal-27d.notion.site/e534804381b5409ab51b070076202822)
 
 <br>
 
@@ -32,7 +34,8 @@ src
 │   ├── Playlist.tsx
 │   ├── PlaylistCategory.tsx
 │   ├── ProfileMenu.tsx
-│   └── Song.tsx
+│   ├── Song.tsx
+│   └── YoutubeVideo.tsx
 ├── routes
 │   ├── home.tsx
 │   ├── login.tsx
@@ -46,7 +49,8 @@ src
 │   │   ├── playBox.scss
 │   │   ├── playlist.scss
 │   │   ├── playlistCategory.scss
-│   │   └── song.scss
+│   │   ├── song.scss
+│   │   └── youtubeVideo.scss
 │   ├── config
 │   │   ├── _colors.scss
 │   │   ├── _font.scss
