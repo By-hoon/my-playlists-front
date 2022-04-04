@@ -1,17 +1,17 @@
-import { VideoProps } from "../shared/Props";
+import {SongProps} from "../shared/Props";
 
-const YoutubeVideo = ({ description, videoId, thumbnail }: VideoProps) => {
+const YoutubeVideo = ({ song }: SongProps) => {
   return (
     <div className="youtube__container">
       <video
         tabIndex={-1}
         className="youtube__video"
         controlsList="nodownload"
-        src={videoId}
+        src={song.videoId}
       ></video>
       <div className="description__container--youtube">
         <textarea
-          value={description}
+          value={song.description}
           className="description__textarea"
           readOnly
         />
@@ -19,7 +19,7 @@ const YoutubeVideo = ({ description, videoId, thumbnail }: VideoProps) => {
       <div className="thumbnail__container--youtube">
         <img
           className="thumbnail__img--youtube"
-          src={thumbnail}
+          src={song.thumbnail}
           alt="youtube_thumbnail"
         />
       </div>
