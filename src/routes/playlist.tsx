@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import PlayBox from "../components/PlayBox";
+import SearchSongs from "../components/SearchSongs";
 import Song from "../components/Song";
 import YoutubeVideo from "../components/YoutubeVideo";
 import { songs } from "../test/user";
@@ -45,16 +46,27 @@ const Playlist = () => {
                 ))}
               </>
             }
-            right={
-              <YoutubeVideo key={song.id} song={song} />
-            }
+            right={<YoutubeVideo key={song.id} song={song} />}
           />
         );
       }
 
       // 선택 플레이리스트 노래 제목 검색화면
       case "searchSong": {
-        return null;
+        return (
+          <PlayBox
+            page={page}
+            top={<>{/*  플리 title, description */}</>}
+            left={
+              <>
+                {songs?.map((song) => (
+                  <Song key={song.id} song={song} />
+                ))}
+              </>
+            }
+            right={<SearchSongs />}
+          />
+        );
       }
 
       // 선택 플레이리스트 노래 설명 수정화면
