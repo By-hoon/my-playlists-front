@@ -4,7 +4,7 @@ const SearchSongs = () => {
       <form method="get" action="/playlist/search">
         <input
           type="text"
-          placeholder="플레이리스트 검색"
+          placeholder="노래 검색"
           name="keyword"
           className="search-song__input"
         />
