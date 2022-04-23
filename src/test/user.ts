@@ -11,7 +11,6 @@ export const songs: Array<any> = [
     title: "호구 - 기리보이",
     id: 1,
     videoId: "96es5i6FzDc",
-    thumbnail: "http://i.ytimg.com/vi/96es5i6FzDc/maxresdefault.jpg",
   },
   {
     createdDate: "2022년 3월 11일",

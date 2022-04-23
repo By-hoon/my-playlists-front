@@ -40,7 +40,7 @@ const YoutubeVideo = ({ song }: SongProps) => {
       <div className="thumbnail__container--youtube">
         <img
           className="thumbnail__img--youtube"
-          src={song.thumbnail}
+          src={`http://i.ytimg.com/vi/${song.videoId}/maxresdefault.jpg`}
           alt="youtube_thumbnail"
         />
       </div>
