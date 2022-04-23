@@ -2,7 +2,9 @@ import { useLocation } from "react-router-dom";
 import EditBox from "../components/EditBox";
 import PlayBox from "../components/PlayBox";
 import PlaylistDetail from "../components/PlaylistDetail";
+import SearchSongs from "../components/SearchSongs";
 import Song from "../components/Song";
+import SongResult from "../components/SongResult";
 import YoutubeVideo from "../components/YoutubeVideo";
 import { songs } from "../test/user";
 
@@ -62,7 +64,28 @@ const Playlist = () => {
 
       // 선택 플레이리스트 노래 제목 검색화면
       case "searchSong": {
-        return null;
+        return (
+          <PlayBox
+            top={
+              <>
+                <PlaylistDetail />
+                <EditBox />
+              </>
+            }
+            left={
+              <>
+                {songs?.map((song) => (
+                  <Song key={song.id} song={song} />
+                ))}
+              </>
+            }
+            right={
+              <>
+                <SearchSongs />
+              </>
+            }
+          />
+        );
       }
     }
     return null;

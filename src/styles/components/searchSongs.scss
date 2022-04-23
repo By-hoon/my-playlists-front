@@ -1,9 +1,13 @@
 .search-song__container {
-  padding: 10px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  padding: 10px 0;
   margin-top: 5px;
   text-align: center;
 }
 .search-song__input {
+  width: 100%;
   left: 10px;
   bottom: -15px;
   border-radius: 3px;
@@ -11,7 +15,5 @@
   padding: 10px;
   background: white;
   outline: 0;
-  width: 90%;
-  max-width: 720px;
   font-size: 14px;
 }

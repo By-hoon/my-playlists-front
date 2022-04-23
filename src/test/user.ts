@@ -26,6 +26,27 @@ export const songs: Array<any> = [
     id: 3,
     videoId: "kbamx9s2x1z",
   },
+  {
+    createdDate: "2022년 3월 13일",
+    description: "기리보이의 찌질한 감성 노래",
+    title: "호구 - 기리보이",
+    id: 4,
+    videoId: "96es5i6FzDc",
+  },
+  {
+    createdDate: "2022년 3월 11일",
+    description: "기리보이의 하이텐션 노래",
+    title: "빈집 - 기리보이",
+    id: 5,
+    videoId: "31dasdj2xc",
+  },
+  {
+    createdDate: "2022년 3월 12일",
+    description: "산책하며 듣는 기리보이 노래",
+    title: "hook송 - 기리보이",
+    id: 6,
+    videoId: "kbamx9s2x1z",
+  },
 ];
 
 export const playlists: Array<any> = [
