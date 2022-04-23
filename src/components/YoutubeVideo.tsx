@@ -1,6 +1,12 @@
-import {SongProps} from "../shared/Props";
+import { SongProps } from "../shared/Props";
+import { useCallback, useState } from "react";
 
 const YoutubeVideo = ({ song }: SongProps) => {
+  const [description, setDescription] = useState(song.description);
+  const onChange = useCallback((e) => {
+    setDescription(e.target.value);
+  }, []);
+
   return (
     <div className="youtube__container">
       <video
@@ -11,9 +17,9 @@ const YoutubeVideo = ({ song }: SongProps) => {
       ></video>
       <div className="description__container--youtube">
         <textarea
-          value={song.description}
           className="description__textarea"
-          readOnly
+          value={description}
+          onChange={onChange}
         />
       </div>
       <div className="thumbnail__container--youtube">

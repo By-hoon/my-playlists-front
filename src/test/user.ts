@@ -10,7 +10,8 @@ export const songs: Array<any> = [
     description: "기리보이의 찌질한 감성 노래",
     title: "호구 - 기리보이",
     id: 1,
-    videoId: "1sad12asxc",
+    videoId: "96es5i6FzDc",
+    thumbnail: "http://i.ytimg.com/vi/96es5i6FzDc/maxresdefault.jpg",
   },
   {
     createdDate: "2022년 3월 11일",
