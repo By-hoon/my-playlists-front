@@ -1,5 +1,5 @@
 .youtube__container {
-  height: 100%;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,11 +14,11 @@
 }
 
 .description__container--youtube {
-  width: 82.5%;
+  width: 720px;
   height: 80px;
 }
 
-.description__textarea {
+.description__textarea--youtube {
   width: 100%;
   height: 100%;
   font-size: 18px;
@@ -54,7 +54,7 @@
 
 .thumbnail__img--youtube {
   width: 100%;
-  height: 100%;
+  height: 99%;
   object-fit: cover;
   filter: blur(10px);
 }

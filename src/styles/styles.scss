@@ -9,7 +9,6 @@
 
 // Components
 @import "./components/editBox.scss";
-@import "./components/header.scss";
 @import "./components/playBox.scss";
 @import "./components/playlist.scss";
 @import "./components/playlistCategory.scss";
@@ -17,6 +16,8 @@
 @import "./components/youtubeVideo.scss";
 @import "./components/playlistDetail.scss";
 @import "./components/searchSongs.scss";
+@import "./components/profileMenu.scss";
+@import "./components/inputForm.scss";
 
 // GlobalStyles
 body {
@@ -29,14 +30,16 @@ body {
   background-color: #2a373a;
 }
 
-div {
+div,
+input {
   box-sizing: border-box;
 }
 
 span,
 p,
 a,
-textarea {
+textarea,
+input {
   font-family: "KoPub Dotum";
 }
 

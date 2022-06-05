@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 
 export interface PlayBoxProps {
-  top: ReactNode;
   left: ReactNode;
   right: ReactNode;
 }
@@ -11,9 +10,20 @@ export interface PlaylistCategoryProps {
 }
 
 export interface PlaylistProps {
-  playlist: Record<string, any>;
+  author: string;
+  bookmark: boolean;
+  description: string;
+  playlistId: number;
+  title: string;
+  updatedDate: string;
+  visibility: boolean;
+  songCount: number;
 }
 
 export interface SongProps {
-  song: Record<string, any>;
+  songId: number;
+  title: string;
+  videoId: string;
+  description: string;
+  createdDate: string;
 }
